@@ -4,9 +4,9 @@ public class Gambler {
 
     public void game() {
         System.out.println("Game Starts");
-        int stack=100;
+        int stake=100;
         int bet=1;
-        System.out.println("Every Day Stack: "+stack);
+        System.out.println("Every Day Stake: "+stake);
         System.out.println("Bet Price: "+bet);
     }
 
