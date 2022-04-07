@@ -11,6 +11,12 @@ public class Gambler {
 
         Random random = new Random();
         int Bet = random.nextInt(2);
+        System.out.println("Game Starts");
+        int stake=100;
+        int bet=1;
+        System.out.println("Every Day Stake: "+stake);
+        System.out.println("Bet Price: "+bet);
+    }
 
         if(Bet == 1) {
             System.out.println("Bet Win");
