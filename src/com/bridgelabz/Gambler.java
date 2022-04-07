@@ -2,11 +2,11 @@ package com.bridgelabz;
 import java.util.Random;
 
 public class Gambler {
-    static int stack=100;
+    static int stake=100;
     final static int bet=1;
 
     public void game() {
-        System.out.println("Every Day Stack: "+stack);
+        System.out.println("Every Day Stake: "+stake);
         System.out.println("Bet Price: "+bet);
 
         Random random = new Random();
