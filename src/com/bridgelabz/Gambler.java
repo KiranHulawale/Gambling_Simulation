@@ -23,7 +23,7 @@ public class Gambler {
                 System.out.println("Final Amount: " + (stake -= bet));
             }
         }
-    }
+
 
     public static void main(String[] args) {
             Gambler gambling = new Gambler();
