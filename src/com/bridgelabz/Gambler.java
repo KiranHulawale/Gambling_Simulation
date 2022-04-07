@@ -9,12 +9,15 @@ public class Gambler {
         System.out.println("Every Day Stack: " + stake);
         System.out.println("Bet Price: " + bet);
 
+        int stack_Upper = 150;
+        int stack_Lower = 50;
+
         int amount=0;
         int won = 0;
         int lost=0;
         int day;
         for (day = 0; day < 20; day++) {
-            while (won > (stake/2)  || lost < (stake/2)) {
+            while (stake > stack_Upper  && stake < stack_Lower) {
                 Random random = new Random();
                 int Bet = random.nextInt(2);
                 if (Bet  == bet) {
@@ -25,12 +28,12 @@ public class Gambler {
                     stake--;
                 }
             }
-            if (won > (stake/2)) {
+            if (stake > stack_Upper) {
                 won++;
-               // amount = amount + 50;
-            } else if (lost < (stake/2)) {
+                amount = amount + 50;
+            } else if (stake < stack_Upper) {
                 lost++;
-               // amount = amount - 50;
+                amount = amount - 50;
             }
         }
         if (won > lost) {
